@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Grid Sample</title>
+    <style>
+        @keyframes wobble{
+       /*     from{
+              box-shadow: 0 0 100px  rgb(211, 171, 171);
+            }
+            to{
+                box-shadow: 0 0 100px  #333;
+            }
+            */
+            0%{
+                rotate: -10deg;
+
+            }
+            25%{
+                rotate: 10deg;
+            }
+            50%{
+                rotate: -10deg;
+            }
+            75%{
+                rotate: 10deg;
+                transform: skewY(5deg);
+            }
+            100%{
+                rotate: -10deg;
+                transform: skewY(0);
+                box-shadow: 1px 1px 4px black;
+                border-radius: 0px;
+            }
+        }
+        
+        .container{
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(400px,1fr)); /*1fr 1fr 1fr 2fr */
+            gap: 1rem ;
+        }
+        .image{
+            box-shadow: 0 0 2px #333;
+            padding: 1rem;
+            text-align: center;
+            rotate: -10deg;
+            scale: 1;
+            transition: all 250ms ease ;
+            animation: wobble 5s ease  infinite ;
+/*            transform: skew(45deg,10deg); */
+        }
+        .image:hover{
+            transform: rotate(10deg)  scale(.5) skew(5deg);
+
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="image"><img src="assets/images/product-1 (1).jpeg" alt="img"0 width="300"></div>
+        <div class="image"><img src="assets/images/product-1 (2).jpeg" alt="img" width="300"></div>
+        <div class="image"><img src="assets/images/product-1 (3).jpeg" alt="img" width="300"></div>
+        <div class="image"><img src="assets/images/product-1 (4).jpeg" alt="img" width="300"></div>
+        <div class="image"><img src="assets/images/product-1 (5).jpeg" alt="img" width="300"></div>
+        <div class="image"><img src="assets/images/product-1 (6).jpeg" alt="img" width="300"></div>
+        <div class="image"><img src="assets/images/product-1 (7).jpeg" alt="img" width="300"></div>
+        <div class="image"><img src="assets/images/product-1 (8).jpeg" alt="img" width="300"></div>
+        <div class="image"><img src="assets/images/product-1 (9).jpeg" alt="img" width="300"></div>
+        <div class="image"><img src="assets/images/product-1 (10).jpeg" alt="img" width="300"></div>
+        <div class="image"><img src="assets/images/product-1 (11).jpeg" alt="img" width="300"></div>
+        <div class="image"><img src="assets/images/product-1 (12).jpeg" alt="img" width="300"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JS 3</title>
+    <style>
+        form{
+            display: flex;
+            flex-flow: column wrap;
+            gap: .5rem;
+            width: 100%;
+            max-width: 200px;
+            margin: auto;
+        }
+        .btns{
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <label for="'one">Enter first number</label>
+        <input type="number" id="one" name="one">
+        <label for="two">Eter another number</label>
+        <input type="number" id="two" name="two">
+        <!-- <button class="add">Add Values.</button> -->
+       
+        <div>
+        <button class="add">Add</button>
+        <button class="sub">Sub</button>
+        <button class="mul">Mul</button>
+        <button class="div">Div</button>
+    
+    </div>
+    <h4 class="answer">Answer:N/A</h4>
+    
+    </form>
+
+    <Script>
+        let btn = document.querySelector('.add')
+        let ans = document.querySelector('.answer')
+
+        btn.onclick = function(e){
+            e.preventDefault()
+            /*
+            console.log('you click the button')*/
+            var one = document.querySelector('#one').value
+            var two = document.querySelector('#two').value
+            console.log(one , two)
+
+            ans.innerHTML = parseInt(one) + parseInt(two)
+
+
+            let btn = document.querySelector('.Sub')
+            let ans = document.querySelector('.answer')
+
+            var one =document.querySelector('#one').value
+            var two = document.querySelector('#two').value
+            ans.innerHTML = parseInt(one) - parseInt(two)
+
+
+
+
+        }
+    </Script>
+</body>
+</html>

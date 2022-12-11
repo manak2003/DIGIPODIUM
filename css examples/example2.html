@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+    <title>CSS example2</title>
+    <style>
+        h2{
+            color: cadetblue;
+        }
+        form{
+            background-color: blueviolet;
+            border: 2px black solid;
+            width: 300px;
+           margin-left: 700px;
+            
+        }
+        form:hover{
+            background-color: black;
+        }
+        #username:focus{
+            color: grey;
+            background-color: #f8f898;
+        }
+        
+       #username, #pwd{
+        margin: .5rem;
+        width: 200px;
+        margin-top: .5rem;
+}
+        label{
+            display: block;
+            margin-left: .5rem;
+            margin-top: .5rem;
+            color: whitesmoke;
+        }
+
+        input [type="submit"]
+        {
+        margin-top: .5rem;
+        }
+        </style>
+</head>
+<body align="center">
+    <h2>A simple form</h2>
+    <form  align="center">
+        <div align="center">
+            <label for="username">Your Username
+
+            </label>
+            <input type="text" name="username" id="username" placeholder="JOhn">
+
+        </div>
+        <div>
+            <label for="pwd">Your Password</label>
+            <input type="password" name="pwd" id="pwd" placeholder="Secret">
+        </div>
+        <div>
+            <input type="submit" value="sign in">
+        </div>
+    </form>
+</body>
+</html>

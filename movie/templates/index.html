@@ -1,0 +1,37 @@
+{% extends 'layout/base.html' %}
+{% load static %}
+
+
+{% block content %}
+<div class="container">
+    <div class="row">
+       
+        <div class="col-lg-3 col-md-4 mb-3">
+            <div class="card">
+                <img class="card-img-top" src="{{item.image.url}}" alt="{{item.title}}">
+                <div class="card-body">
+                    <h5 class="card-title">{{item.title}}</h5>
+                    <p class="card-text">{{item.category}}</p>
+                </div>
+                <div class="card-footer">
+                    <i class="bi bi-download"><h5>Install</h5></i>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+{% endblock content %}
+    
+
+{% block css %}
+<style>
+    body{
+        background-color: black;
+    }
+</style>
+{% endblock css %}
+    
+
+{% block js %}{% endblock js %}
+    

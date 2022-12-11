@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS Playground</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            padding: 0;
+            margin: 0;
+        }
+        .box1{
+            height: 200px;
+            width: 300px;
+            background-color: bisque;
+            background: #75A499;
+background: -moz-linear-gradient(left, #75A499 0%, #05CB36 47%, #417546 100%);
+background: -webkit-linear-gradient(left, #75A499 0%, #05CB36 47%, #417546 100%);
+background: linear-gradient(to right, #75A499 0%, #05CB36 47%, #417546 100%);
+        }
+        .box2{
+            height: 200px;
+            width: 500px;
+            background-color: rgb(67, 31, 101);
+        }
+        .section1{
+            height: 500px;
+            background-color: aqua;
+            background-image: url('assets/images/bg1.jpg');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+
+        }
+        .section2{
+            height: 100vh;
+            background-color: yellow;
+        }
+        .section2 .para{
+            font-size: 3rem;
+            padding: 2rem;
+            margin: 0;
+          
+            
+                color: #FFF;
+                background-color: #333;
+                text-shadow: #FFF 0 -1px 4px, #ff0 0 -2px 10px, #ff8000 0 -10px 20px, red 0 -18px 40px;
+                
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="section1"></div>
+    <div class="section2">
+        <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, totam, delectus cupiditate expedita sint in numquam nemo fuga, natus commodi ratione veniam recusandae quo. Officia quisquam aliquam inventore unde accusantium!</p>
+    </div>
+</body>
+</html>
+
